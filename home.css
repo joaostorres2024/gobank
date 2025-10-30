@@ -1,0 +1,102 @@
+@import url('https://fonts.cdnfonts.com/css/galano-grotesque-alt');
+
+*{
+    font-family: "Galano Grotesque";
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.cabecalho-container{
+    padding: 10px 50px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-cabecalho{
+    margin-top: 10px;
+    width: 60px;
+}
+
+.menu-container{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu-ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    gap: 3em;
+}
+
+.menu-li{
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.botao-entrar{
+    cursor: pointer;
+    border: none;
+    font-weight: 600;
+    font-size: 18px;
+    background: none;
+}
+
+.dropdown-conteudo{
+    padding-bottom: 30px;
+    gap: 10px;
+    background-color: #FFFFFF;
+    width: auto;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    z-index: 10;
+}
+
+.dropdown{
+    display: none;
+}
+
+.dropdown.show{
+    display: block;
+}
+
+.dropdown-ul{
+    gap: 5px;
+    display: flex;
+    flex-direction: column;
+    padding-left: 270px;
+    width: 100vw;
+    list-style-type: none;
+}
+
+.item-menu{
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.item-menu:hover{
+    color: #0073D2;
+    transition: 0.2s ease all;
+    padding-left: 20px;
+}
+
+.item-menu:not(:hover){
+    transition: 0.2s ease all;
+}
+
+.a-link{
+    text-decoration: none;
+    color: #000000;
+}
+
+.teste{
+    height: 500px;
+    background-color: #0073D2;
+}
