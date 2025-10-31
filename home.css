@@ -57,9 +57,11 @@
 }
 
 .botao-entrar{
-    gap: 10px;
+    gap: 5px;
     flex-direction: row;
     display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     border: none;
     font-weight: 600;
@@ -68,7 +70,7 @@
 }
 
 .icone-usuario{
-    width: 20px;
+    width: 25px;
 }
 
 .dropdown-conteudo{
@@ -122,13 +124,12 @@
 }
 
 .principal-container{
-    padding: 0 50px;
-    background-image: url(/BackgroundHero.jpg);
+    padding: 0 100px;
+    background: linear-gradient(90deg, #0073D2 0%, #0094E0 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     display: flex;
     height: 600px;
@@ -138,7 +139,6 @@
     gap: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
 }
 
 .p-principal{
@@ -150,14 +150,14 @@
 .h1-principal{
     color: #FFFFFF;
     font-size: 32px;
-    max-width: 60%;
+    max-width: 70%;
 }
 
 .p2-principal{
-    max-width: 50%;
+    max-width: 70%;
     font-size: 18px;
     color: #FFFFFF;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .botao-principal{
@@ -176,6 +176,217 @@
     background-color: #E0FFFF;
 }
 
-.acess-rapido-container{
-    padding: 0 50px;
+.acesso-rapido-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #3C404B;
+    padding: 50px 100px;
+}
+
+.cards-container {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: center;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+
+.h1-acesso-rapido{
+    color: #FFFFFF;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+
+.cards{
+    overflow: hidden;
+    cursor: pointer;
+    gap: 15px;
+    flex-direction: column;
+    display: flex;
+    height: 400px;
+    padding: 30px;
+    background-color: #323741;
+    border-radius: 20px;
+}
+
+.cards:hover{
+    background-color: #505562;
+    transition: 0.2s ease all;
+}
+
+.cards:not(:hover){
+    transition: 0.2s ease all;
+}
+
+.icone-card{
+    margin-bottom: 10px;
+    width: 40px;
+}
+
+.titulo-card{
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.p-card{
+    color: #FFFFFF;
+    font-size: 14px;
+}
+
+.emprestimos-container{
+    height: 800px;
+    width: 100vw;
+    gap: 50px;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background-color: #FFFFFF;
+}
+
+.texto-emprestimo-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 40%;
+}
+
+.p-emprestimos{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0073D2;
+}
+
+.h1-emprestimos{
+    font-size: 40px;
+    color: #000000;
+}
+
+.p2-emprestimos{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.cards-emprestimo-container{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-emprestimo1{
+    gap: 10px;
+    padding: 30px;
+    justify-content: end;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    background-image: url(/BG1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-emprestimo2{
+    gap: 10px;
+    padding: 30px;
+    justify-content: end;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    background-image: url(/BG1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-emprestimo3{
+    gap: 10px;
+    padding: 30px;
+    justify-content: end;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    background-image: url(/BG1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.card-emprestimo4{
+    gap: 10px;
+    padding: 30px;
+    justify-content: end;
+    flex-direction: column;
+    display: flex;
+    border-radius: 20px;
+    height: 300px;
+    width: 250px;
+    background-image: url(/BG1.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+.p-card{
+    font-size: 16px;
+}
+
+.p-link{
+    font-size: 18px;
+    text-decoration: underline;
+    color: #FFFFFF;
+}
+
+.whatsapp-container{
+    gap: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+    background-color: #0094E0;
+    color: #FFFFFF;
+}
+
+.h1-whatsapp{
+    font-size: 40px;
+}
+
+.p-whatsapp{
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.botao-whatsapp{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFFFFF;
+    background-color: #0094E0;
+    margin-top: 10px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 350px;
+}
+
+.botao-whatsapp:hover{
+    background-color: #1db3f4;
+}
+
+.icone-whatsapp{
+    width: 20px;
 }
