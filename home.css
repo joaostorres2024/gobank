@@ -6,12 +6,13 @@
     margin: 0;
     box-sizing: border-box;
     overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 .cabecalho-container{
     background-color: #FFFFFF;
     position: fixed;
-    padding: 15px 50px;
+    padding: 10px 50px;
     width: 100vw;
     display: flex;
     flex-direction: row;
@@ -80,9 +81,9 @@
 
 .dropdown-conteudo {
     position: fixed;
-    top: 70px;
+    top: 60px;
     left: auto;
-    padding: 20px 30px;
+    padding: 20px 0;
     background-color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -493,6 +494,7 @@
     overflow: hidden;
     line-height: 120%;
     font-size: 42px;
+    max-width: 90%;
     color: #000000;
 }
 
