@@ -41,3 +41,9 @@ document.addEventListener("click", (event) => {
     });
   }
 });
+
+document.querySelectorAll(".opcoes-rodape").forEach((elemento) => {
+  elemento.addEventListener("click", () => {
+    alert("Caminho não existe");
+  });
+});

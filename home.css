@@ -9,12 +9,16 @@
 }
 
 .cabecalho-container{
+    background-color: #FFFFFF;
+    position: fixed;
     padding: 15px 50px;
     width: 100vw;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    z-index: 11;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .logo-cabecalho{
@@ -73,17 +77,19 @@
     width: 25px;
 }
 
-.dropdown-conteudo{
-    padding-top: 20px;
-    padding-bottom: 30px;
-    gap: 10px;
-    background-color: #ffffffee;
-    width: auto;
-    position: absolute;
+
+.dropdown-conteudo {
+    position: fixed;
+    top: 70px;
+    left: auto;
+    padding: 20px 30px;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
-    z-index: 10;
+    z-index: 12;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 
 .dropdown{
     display: none;
@@ -124,13 +130,15 @@
 }
 
 .principal-container{
-    padding: 0 100px;
+    margin-top: 70px;
+    padding: 50px 100px;
     background: linear-gradient(90deg, #0073D2 0%, #0094E0 100%);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     display: flex;
     height: 600px;
 }
@@ -149,8 +157,10 @@
 
 .h1-principal{
     color: #FFFFFF;
-    font-size: 32px;
+    font-size: 42px;
     max-width: 70%;
+    overflow: hidden;
+    line-height: 120%;
 }
 
 .p2-principal{
@@ -166,7 +176,7 @@
     border: none;
     cursor: pointer;
     border-radius: 20px;
-    height: 40px;
+    height: 45px;
     font-weight: 600;
     font-size: 18px;
     width: 200px;
@@ -180,7 +190,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
     background-color: #3C404B;
     padding: 50px 100px;
 }
@@ -189,14 +198,12 @@
     display: grid;
     gap: 20px;
     grid-template-columns: repeat(4, 1fr);
-    justify-content: center;
-    max-width: 1400px;
     margin: 0 auto;
 }
 
 .h1-acesso-rapido{
     color: #FFFFFF;
-    font-size: 40px;
+    font-size: 42px;
     margin-bottom: 40px;
 }
 
@@ -238,12 +245,10 @@
 }
 
 .emprestimos-container{
-    height: 800px;
-    width: 100vw;
-    gap: 50px;
     padding: 50px 100px;
     display: flex;
-    justify-content: center;
+    gap: 50px;
+    justify-content: space-around;
     align-items: center;
     flex-direction: row;
     background-color: #FFFFFF;
@@ -263,7 +268,9 @@
 }
 
 .h1-emprestimos{
-    font-size: 40px;
+    overflow: hidden;
+    line-height: 120%;
+    font-size: 42px;
     color: #000000;
 }
 
@@ -350,15 +357,14 @@
     gap: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
     padding: 50px 100px;
-    background-color: #0094E0;
+    background-color: #0073D2;
     color: #FFFFFF;
 }
 
 .h1-whatsapp{
-    font-size: 40px;
+    font-size: 42px;
 }
 
 .p-whatsapp{
@@ -372,7 +378,7 @@
     justify-content: center;
     display: flex;
     color: #FFFFFF;
-    background-color: #0094E0;
+    background-color: #0073D2;
     margin-top: 10px;
     border: 2px solid #FFFFFF;
     cursor: pointer;
@@ -384,9 +390,206 @@
 }
 
 .botao-whatsapp:hover{
-    background-color: #1db3f4;
+    background-color: #1888e4;
 }
 
 .icone-whatsapp{
     width: 20px;
+}
+
+.trilha-container{
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 50px 100px;
+    width: 100%;
+}
+
+.texto-trilha-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 45%;
+    gap: 20px;
+}
+
+.imagem-trilha-container{
+    display: flex;
+}
+
+.p-trilha{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0073D2;
+}
+
+.h1-trilha{
+    font-size: 42px;
+    color: #000000;
+    overflow: hidden;
+    line-height: 120%
+}
+
+.botao-trilha{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFFFFF;
+    background-color: #0073D2;
+    margin-top: 10px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 350px;
+}
+
+.botao-trilha:hover{
+    background-color: #1888e4
+}
+
+.imagem-trilha{
+    border-radius: 20px;
+    max-width: 500px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.cartoes-container{
+    gap: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 100px 50px 100px;
+}
+
+.texto-cartoes-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 50%;
+}
+
+.cards-cartao-container{
+    margin: 10px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 230px);
+    gap: 10px;
+}
+
+.p-cartoes{
+    font-size: 22px;
+    font-weight: 600;
+    color: #0073D2;
+}
+
+.h1-cartoes{
+    overflow: hidden;
+    line-height: 120%;
+    font-size: 42px;
+    color: #000000;
+}
+
+.card-cartoes{
+    border-radius: 20px;
+    padding: 20px;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 20px;
+    background-color: #F4F5FA;
+}
+
+.botao-cartoes{
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    color: #FFFFFF;
+    background-color: #0073D2;
+    margin-top: 10px;
+    border: 2px solid #FFFFFF;
+    cursor: pointer;
+    border-radius: 20px;
+    height: 50px;
+    font-weight: 600;
+    font-size: 18px;
+    width: 200px;
+}
+
+.botao-cartoes:hover{
+    background-color: #1888e4
+}
+
+.icone-cartoes{
+    width: 30px;
+}
+
+.p-card-cartoes{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.imagem-cartoes{
+    max-width: 600px;
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.rodape-container{
+    gap: 100px;
+    color: #E0E0E0;
+    padding: 50px 100px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(4, 1fr);
+    background-color: #000000;
+}
+
+.cards-rodape-container1{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.logo-rodape{
+    width: 160px;
+}
+
+.h2-rodape{
+    font-size: 24px;
+    margin-bottom: 30px;
+    color: #FFFFFF;
+}
+
+.titulo-rodpape{
+    padding-top: 10px;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rodape-ul{
+    font-size: 14px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.opcoes-rodape{
+    cursor: pointer;
+}
+
+hr {
+    border: none;  
+    height: 2px; 
+    background-color: #2f3136; 
 }
