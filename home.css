@@ -133,7 +133,7 @@
 .principal-container{
     margin-top: 70px;
     padding: 50px 100px;
-    background: linear-gradient(90deg, #0073D2 0%, #0094E0 100%);
+    background-image: url(/BackgroundHero.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -159,13 +159,13 @@
 .h1-principal{
     color: #FFFFFF;
     font-size: 42px;
-    max-width: 70%;
+    max-width: 60%;
     overflow: hidden;
     line-height: 120%;
 }
 
 .p2-principal{
-    max-width: 70%;
+    max-width: 60%;
     font-size: 18px;
     color: #FFFFFF;
     font-weight: 500;
@@ -297,7 +297,7 @@
     border-radius: 20px;
     height: 300px;
     width: 250px;
-    background-image: url(/BG1.jpg);
+    background-image: url(/BG-1.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -311,7 +311,7 @@
     border-radius: 20px;
     height: 300px;
     width: 250px;
-    background-image: url(/BG1.jpg);
+    background-image: url(/BG-2.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -325,7 +325,7 @@
     border-radius: 20px;
     height: 300px;
     width: 250px;
-    background-image: url(/BG1.jpg);
+    background-image: url(/BG-3.jpg);
     background-position: center;
     background-size: cover;
 }
@@ -339,7 +339,7 @@
     border-radius: 20px;
     height: 300px;
     width: 250px;
-    background-image: url(/BG1.jpg);
+    background-image: url(/BG-4.jpg);
     background-position: center;
     background-size: cover;
 }
